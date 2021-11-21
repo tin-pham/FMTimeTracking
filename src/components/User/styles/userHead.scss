@@ -1,0 +1,45 @@
+@use 'utils/colors' as *;
+@use 'utils/font' as *;
+@use 'utils/variables' as *;
+@use 'utils/mixins' as *;
+/* user head */
+.user__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.1em;
+  background-color: $blue;
+
+  border-radius: $borderRadius;
+  @include desktop {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  img {
+    width: 60px;
+
+    border: 3px solid white;
+
+    border-radius: 50%;
+    @include desktop {
+      width: 100px;
+    }
+  }
+}
+
+.user__info {
+  padding: 0.6em;
+  width: 14rem;
+
+  color: $paleBlue;
+
+  .user__name {
+    font-size: clamp(1.4rem, 5vw, 3.5rem);
+    font-weight: $regular;
+  }
+  &::before {
+    content: 'Report for';
+  }
+}

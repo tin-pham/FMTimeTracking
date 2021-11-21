@@ -1,0 +1,6 @@
+@use 'utils/font' as *;
+$main-font: $rubik;
+
+#app {
+  font-family: $main-font;
+}

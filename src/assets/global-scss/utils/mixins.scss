@@ -1,0 +1,10 @@
+@mixin center {
+  display: grid;
+  place-items: center;
+}
+
+@mixin desktop {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}

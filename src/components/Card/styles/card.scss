@@ -1,0 +1,51 @@
+@use 'utils/colors' as *;
+@use 'utils/font' as *;
+@use 'utils/variables' as *;
+@use 'utils/mixins' as *;
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  background-color: $darkBlue;
+
+  border-radius: $borderRadius;
+  overflow: hidden;
+  &__icon {
+    position: absolute;
+    right: 0.5em;
+    top: 0;
+  }
+
+  @include desktop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.card__time {
+  display: flex;
+}
+
+.card--lighter-red {
+  background-color: $lighterRed;
+}
+
+.card--soft-blue {
+  background-color: $softBlue;
+}
+.card--light-red {
+  background-color: $lightRed;
+}
+.card--light-green {
+  background-color: $lightGreen;
+}
+.card--violet {
+  background-color: $violet;
+}
+.card--light-orange {
+  background-color: $lightOrange;
+}

@@ -1,0 +1,17 @@
+@use 'utils/colors' as *;
+@use 'utils/variables' as *;
+.user {
+  background-color: $darkBlue;
+  border-radius: $borderRadius;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  &__head {
+    flex: 3;
+  }
+  &__body {
+    flex: 1;
+  }
+}

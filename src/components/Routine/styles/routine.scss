@@ -1,0 +1,21 @@
+@use 'utils/mixins' as *;
+.routine {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: 120px;
+
+  justify-content: center;
+
+  gap: 1.5em;
+  grid-row-gap: 2em;
+  /* Create box for z-index to work in 'card' */
+  isolation: isolate;
+
+  margin-block: 2rem;
+
+  @include desktop {
+    grid-auto-rows: 250px;
+    margin: 0;
+  }
+}
