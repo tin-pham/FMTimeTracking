@@ -8,7 +8,7 @@
         <p>Last {{ currentDate }} - {{ timePrevious }}hr</p>
       </div>
 
-      <button class="card__button"><span>Edit</span></button>
+      <button class="card__button" aria-label="Edit"><span>Edit</span></button>
     </div>
   </div>
 </template>
